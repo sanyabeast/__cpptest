@@ -28158,12 +28158,23 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 2 "hello.cpp" 2
+# 1 "TestMathClass.h" 1
 
-# 2 "hello.cpp"
+# 1 "TestMathClass.h"
+class TestMathClass {
+public:
+ double add ( double a, double b );
+};
+# 3 "hello.cpp" 2
+
 using namespace std;
 
 
+TestMathClass tmc;
+
+string kek = "privet";
+
 int main() {
-    cout << "Hello, world!" << endl;
+    cout << tmc.add( 11, 12 ) << endl;
     return 0;
 }
